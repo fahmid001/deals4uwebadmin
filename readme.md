@@ -1,14 +1,22 @@
-## Laravel API Boilerplate (JWT Edition)
+## Laravel API and Webadmin Project
+#API
+User Signup
+Deals List API
+Category List API
+Favourite list API
+Create Follow/Following
+Add Fovourite
+Message
+Push Notification
 
-Laravel API Boilerplate is a "starter kit" you can use to build your first API in seconds. As you can easily imagine, it is built on top of the awesome Laravel Framework. This version is built on Laravel 5.4!
+From this project we can learn how to create API in laravel.
+#Webadmin
+Create category
+Create Brand
+Upload Product
 
-It is built on top of three big guys:
-
-* JWT-Auth - [tymondesigns/jwt-auth](https://github.com/tymondesigns/jwt-auth)
-* Dingo API - [dingo/api](https://github.com/dingo/api)
-* Laravel-CORS [barryvdh/laravel-cors](http://github.com/barryvdh/laravel-cors)
-
-What I made is an integration of these three packages and a setup of some authentication and credentials recovery methods.
+There are two section in webapp.
+user part and admin part
 
 ## Installation
 
