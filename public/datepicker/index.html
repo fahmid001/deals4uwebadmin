@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="datepicker.css">
+<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="col-lg-3">
+                                   <label>Date of Birth<span  style="color:red"> *</span></label>
+                               </div>
+                               <div class="col-lg-1">
+                                   <label>:</label>
+                               </div> 
+                               <div class="col-lg-8">
+                                   <input class="form-control" name="birthdate" id="datepicker-without-time" required>
+                               </div>   
+
+</body>
+<script src="jquery-1.9.1"></script>
+<script src="jquery-ui.js"></script>
+<script src="bootstrap-datepicker.js"></script>
+</html>
+
+
+<script>
+      $(function () {               
+               $('#datepicker-without-time').datepicker({
+                       format: 'yyyy-mm-dd',
+               }).on('changeDate', function(e){
+                       $(this).datepicker('hide');
+               });
+           });
+
+       $(function () {
+               $('#admission-date').datepicker({
+                   dateFormat: 'yy-mm-dd'
+               });
+           });
+       $(function () {
+               $('#joining-date').datepicker({
+                   dateFormat: 'yy-mm-dd'
+               });
+           });
+       $(function () {
+               $('#appointed-date').datepicker({
+                   dateFormat: 'yy-mm-dd'
+               });
+           });
+       $(function () {
+              $('#notice-date').datepicker({
+                   dateFormat: 'yy-mm-dd'
+               });
+        });
+        $(function () {
+              $('#established-date').datepicker({
+                   dateFormat: 'yy-mm-dd'
+               });
+        });
+
+        $(function () {
+              $('#attendance-date').datepicker({
+                   dateFormat: 'yy-mm-dd'
+               });
+        });
+        $(function () {
+              $('#start-date').datepicker({
+                   dateFormat: 'yy-mm-dd'
+               });
+        });
+        $(function () {
+              $('#end-date').datepicker({
+                   dateFormat: 'yy-mm-dd'
+               });
+        });
+
+     $(function () {
+              $('.common-date').datepicker({
+                   dateFormat: 'yy-mm-dd'
+               });
+        });
+
+     $(function() {
+      $('body').on('click','.input_date', function() {
+       $(this).datepicker('destroy').datepicker({
+                   dateFormat: 'yy-mm-dd'
+               }).focus();
+      });
+    });
+     
+
+      </script>
